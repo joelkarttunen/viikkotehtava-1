@@ -11,6 +11,7 @@ public partial class f6761_slave : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         lblToday.Text = "Tänään on: " + DateTime.Now;
+        
     }
     protected void Calendar1_SelectionChanged(object sender, EventArgs e)
     {
@@ -20,10 +21,26 @@ public partial class f6761_slave : System.Web.UI.Page
     }
     protected void btnPrevYear_Click(object sender, EventArgs e)
     {
-        //MITEN TOIMII??
+        try
+        {
+            Calendar1.SelectedDate = Calendar1.SelectedDate.Date.AddYears(-1);
+            Calendar1.VisibleDate = Calendar1.SelectedDate;
+        }
+        catch (Exception)
+        {
+            Calendar1.SelectedDate = DateTime.Now;
+            Calendar1.SelectedDate = Calendar1.SelectedDate.Date.AddYears(-1);
+            Calendar1.VisibleDate = Calendar1.SelectedDate;
+        }
+        
     }
     protected void btnNextYear_Click(object sender, EventArgs e)
     {
-        //MITEN TOIMII??
+        if (Calendar1.SelectedDate == DateTime.MinValue)
+        {
+            Calendar1.SelectedDate = DateTime.Now;
+        }
+        Calendar1.SelectedDate = Calendar1.SelectedDate.Date.AddYears(1);
+        Calendar1.VisibleDate = Calendar1.SelectedDate;
     }
 }
