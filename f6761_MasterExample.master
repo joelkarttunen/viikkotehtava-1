@@ -7,8 +7,12 @@
     <title>Jepajee joo joo</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="demoSite.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" /> 
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
 </head>
+
+    <script type="text/javascript"  src='<%# ResolveUrl ("~/Js/jquery-1.2.3.min.js") %>'></script>
+    <script src="js/bootstrap.min.js"></script> 
 <body>
     <form id="form1" runat="server">
     <div>

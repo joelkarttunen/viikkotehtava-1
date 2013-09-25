@@ -11,7 +11,21 @@ public partial class f6761_valuuttamuunnin : System.Web.UI.Page
 
 
     protected void Page_Load(object sender, EventArgs e)
+        //kotitehtävää 1 varten katsotaan mihin tieto on tallennettu. Tulee ongelma, jos keksiin on tallennettu aiemmin nimi, ja yrittää välittää sen uudelleen parametrinä.
     {
+        if (Request.QueryString["name"] != null)
+        {
+            txtUser.Text = Request.QueryString["name"];
+        }
+        if (Session["name"] != null)
+        {
+            txtUser.Text = (string)Session["name"];
+        }
+        if (Request.Cookies["nimi"].Value != null)
+        {
+            txtUser.Text = Request.Cookies["nimi"].Value;
+        }
+        
 
     }
     protected void btnConvert_Click(object sender, EventArgs e)

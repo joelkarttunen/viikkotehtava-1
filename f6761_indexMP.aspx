@@ -14,10 +14,12 @@
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/f6761_slave.aspx">Orjakalenteri</asp:HyperLink>
 
         <h2> Viikkotehtävät 1 ja 2</h2>
-        <asp:TextBox ID="TextBox1" runat="server">Tähän nimesi</asp:TextBox>
-        <asp:Button ID="btnParameter" runat="server" Text="Välitä parametrina" />
-        <asp:Button ID="btnSaveSession" runat="server" Text="Tallenna Sessioniin" />
-        <asp:Button ID="btnSaveCookie" runat="server" Text="Tallenna Cookieen" />
+        <asp:TextBox ID="txtName" runat="server">Tähän nimesi</asp:TextBox>
+        <asp:Button ID="btnParameter" runat="server" Text="Välitä parametrina" OnClick="btnParameter_Click" />
+        <asp:Button ID="btnSaveSession" runat="server" Text="Tallenna Sessioniin" OnClick="btnSaveSession_Click" />
+        <asp:Button ID="btnSaveCookie" runat="server" Text="Tallenna Cookieen" OnClick="btnSaveCookie_Click" /> <br />
+
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/f6761_ElakeLaskuri.aspx">Eläkelaskuri</asp:HyperLink>
     </div>
 </asp:Content>
 
