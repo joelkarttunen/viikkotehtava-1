@@ -20,6 +20,11 @@
         <asp:Button ID="btnSaveCookie" runat="server" Text="Tallenna Cookieen" OnClick="btnSaveCookie_Click" /> <br />
 
         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/f6761_ElakeLaskuri.aspx">Eläkelaskuri</asp:HyperLink>
+
+        <h2> Viikon 39 tuntiharkat</h2>
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/f6761_GridViewDataSource.aspx">Demo of Databound Controls</asp:HyperLink> <br />
+        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/f6761_DBControls2.aspx">Demo for single </asp:HyperLink> <br />
+        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/f6761_Records.aspx">XML-data</asp:HyperLink> <br />
     </div>
 </asp:Content>
 
