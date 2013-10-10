@@ -16,7 +16,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <img src="images/hoeville.png" />
+        <img src="images/hoeville.png" /> <br />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
