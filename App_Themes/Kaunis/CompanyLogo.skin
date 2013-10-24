@@ -1,0 +1,2 @@
+﻿<asp:Image runat="server" SkinID="CompanyLogo"
+    ImageUrl="~/images/seppo.gif" />
