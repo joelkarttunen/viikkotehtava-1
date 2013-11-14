@@ -25,6 +25,20 @@
         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/f6761_GridViewDataSource.aspx">Demo of Databound Controls</asp:HyperLink> <br />
         <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/f6761_DBControls2.aspx">Demo for single </asp:HyperLink> <br />
         <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/f6761_Records.aspx">XML-data</asp:HyperLink> <br />
+
+        <h2>Teht 4</h2>
+        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/f6761_WanhatAutot.aspx">Wanhat autot</asp:HyperLink> <br />
+
+        <h2>Teht 5</h2>
+        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/f6761_levykauppaX.aspx">Levykauppa x</asp:HyperLink> <br />
+
+        <h2>Teht 6</h2>
+        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/f6761_SmLiigaOudotOliot.aspx">SM Liigan oudot oliot</asp:HyperLink> <br />
+
+        <h2>Teht 7 & 8 (ulkoasu jäi kiireen takia vähän köyhäksi</h2>
+        <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/f6761_Autokauppa.aspx">Jinta-Rouppi</asp:HyperLink> <br />
+
+        
     </div>
 </asp:Content>
 
